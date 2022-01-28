@@ -1,0 +1,55 @@
+SERVER:
+  HOST: 0.0.0.0
+  PORT: 8080
+
+DATABASE:
+  HOST: "localhost"
+  PORT: 5432
+  USER: "postgres"
+  PASSWORD: ""
+  NAME: "iitkcoin"
+
+WALLET:
+  UPPER_COIN_LIMIT: 10000
+
+TAX:
+  INTER_BATCH: 2
+  INTRA_BATCH: 33
+
+JWT:
+  ACCESS_TOKEN:
+    NAME: "access_token"
+    EXPIRATION_TIME_IN_MIN: 10
+  REFRESH_TOKEN: 
+    NAME: "refresh_token"
+    EXPIRATION_TIME_IN_MIN: 50000
+  PRIVATE_KEY: "this-is-a-secret"
+
+LOGGER:
+  LOG_LEVEL: 5 # Error: 2, Warn: 3, Info: 4, Debug: 5
+
+FRONTEND:
+  URL: "http://localhost:3000"
+
+MAIL: 
+  # IITK 
+  # FROM: ""
+  # PASSWORD: ""
+  # HOST: "mmtp.iitk.ac.in"
+  # PORT: "25"
+
+  # Gmail
+  FROM: "example@gmail.com"
+  PASSWORD: "password"
+  HOST: "smtp.gmail.com"
+  PORT: "587"
+
+OTP:
+  EXPIRY_PERIOD_IN_MIN: 20
+  NEW_REQUEST_WAIT_TIME_IN_MIN: 1
+
+TXNID:
+  REDEEM_SUFFIX: "REDM"
+  REWARD_SUFFIX: "REWD"
+  TRANSFER_SUFFIX: "TRNS"
+  PADDING: 8
